@@ -1,5 +1,10 @@
 import { useState } from "react";
 
+/**
+ * A hook that handles API requests with error and load management.
+ * @param {*} apiFunc The API function to use 
+ * @returns Object contains data, error, loading and request function.
+ */
 const useApi = (apiFunc) => {
     const [data, setData] = useState(null);
     const [error, setError] = useState("");
